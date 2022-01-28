@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns=""http://www.w3.org/1999/xhtml> 
+    <head>
+        <title>TESTing... TESTing...</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>Number: <span th:text="${number}"></span></p>
+        <p>Name: <span th:text="${name}"></span></p>
+        <form action="testForm" method="POST">
+            New Number: <input type="number" name="formNumber" />
+            new Name: <input type="text" name="formName" />
+            <button type="submit">SUBMIT</button>
+        </form>
+    </body>
+</html>
